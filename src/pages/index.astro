@@ -2,18 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Tejidos de ensueño">
 	<main>
 
 		<div class="w-full relative">
-			<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+			<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
 				<div class="text-5xl text-white font-bold flex gap-5 items-center">
-					<img class="m-auto w-20 z-10" src="/TJE_Logo.png">
-					<div class=" border-l-2 h-56"></div>
-					<span class="font-thin ml-[8px]">T J E</span>
+					<img class="w-20 z-10" src="/TJE_Logo.png">
+					<div class="border-l-2 h-56"></div>
+					<span class="font-thin" style="letter-spacing: 10px;">TJE</span>
 				</div>
 				<div class="pt-10 text-center">
-					<span class="text-2xl">TEJIDOS DE ENSUEÑO</span>
+					<span class="text-2xl" style="letter-spacing: 10px;">TEJIDOS DE ENSUEÑO</span>
 					<br>
 					<span id="slogan" class="text-2xl text-blue-900">"El hilo de cada gran obra"</span>
 				</div>
@@ -45,14 +45,8 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	h1 {
-		font-size: 3rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
 		font-family: "Montserrat", serif;
 		font-weight: bold;
-		text-shadow: 5px 5px #558ABB;
 	}
 
 	#slogan {
