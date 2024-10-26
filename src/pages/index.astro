@@ -5,6 +5,8 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Tejidos de ensueño">
 	<main>
 
+
+
 		<div class="w-full relative">
 			<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
 				<div class="text-5xl text-white font-bold flex gap-5 items-center">
@@ -23,13 +25,27 @@ import Layout from '../layouts/Layout.astro';
 			<video class="absolute -bottom-48 blur-3xl -z-40 brightness-75" src="/BG-Video-TJE1.mp4" autoplay loop muted/>
 		</div>
 
-		<div class="max-w-[82ch] m-auto flex gap-11 pt-40 px-8 flex-col md:flex-row">
+
+
+		<div class="max-w-[82ch] m-auto flex gap-11 pt-24 px-8 flex-col  md:flex-row">
 			<div class="text-5xl text-slate-800 font-bold">
-				¿Quienes somos?
+				¿Quienes somos? ✨
 			</div>
 			<div>
 				En TJE, somos un equipo apasionado de diseñadores y creadores especializados en el arte del vestuario para producciones teatrales. Con un profundo amor por el teatro, damos vida a cada personaje a través de prendas cuidadosamente elaboradas que cuentan una historia y transportan al público a diferentes épocas y mundos.
 			</div>
+		</div>
+
+
+		<div id="card" class="bg-slate-900 mt-20 py-20">
+
+			<div class="m-auto max-w-[82ch] flex flex-col items-center px-8">
+				<img src="/MapaTJE.jpg" class="border-solid border-4 border-white rounded-xl w-full max-h-[34ch] object-cover">
+				<div class="self-end text-4xl pt-6 font-bold">
+					¿Dónde encontrarnos?
+				</div>
+			</div>
+			
 		</div>
 
 		<div class="pb-56"></div>
@@ -52,6 +68,14 @@ import Layout from '../layouts/Layout.astro';
 	#slogan {
 		font-family: "Dancing Script", cursive;
 		color: #d4caa4;
+	}
+
+	#card {
+		background: rgba(0, 0, 0, 0.84);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border: 1px solid rgba(0, 0, 0, 0.88);
 	}
 
 </style>
