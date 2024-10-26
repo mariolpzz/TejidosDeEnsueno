@@ -39,35 +39,43 @@ import Layout from "../layouts/Layout.astro";
         muted></video>
     </div>
 
-    <div
-      class="max-w-[82ch] m-auto flex gap-11 pt-24 px-8 flex-col md:flex-row"
-    >
-      <div class="text-5xl text-slate-800 font-bold">¿Quienes somos?</div>
-      <div>
-        En TJE, somos un equipo apasionado de diseñadores y creadores
-        especializados en el arte del vestuario para producciones teatrales. Con
-        un profundo amor por el teatro, damos vida a cada personaje a través de
-        prendas cuidadosamente elaboradas que cuentan una historia y transportan
-        al público a diferentes épocas y mundos.
+    <div>
+      <div
+        class="max-w-[82ch] m-auto flex gap-11 pt-24 px-8 flex-col md:flex-row"
+      >
+        <div class="text-5xl text-slate-800 font-bold">¿Quienes somos?</div>
+        <div>
+          En TJE, somos un equipo apasionado de diseñadores y creadores
+          especializados en el arte del vestuario para producciones teatrales.
+          Con un profundo amor por el teatro, damos vida a cada personaje a
+          través de prendas cuidadosamente elaboradas que cuentan una historia y
+          transportan al público a diferentes épocas y mundos.
+        </div>
       </div>
+	  <img class="max-w-[76ch] max-h-[34ch] object-cover w-full mt-10 m-auto rounded-lg brightness-75" src="/quienes-somos2.jpg">
     </div>
 
     <div id="card" class="mt-20 py-20">
       <div class="m-auto max-w-[82ch] flex flex-col items-center px-8 gap-5">
         <div class="text-4xl self-end">¿Porqué elegirnos?</div>
         <div class="md:text-right">
-			En TJE, creemos que la calidad no tiene que costar una fortuna. Nos especializamos en crear vestuario para obras de teatro que se ajusta a tu presupuesto, sin dejar de lado la calidad. Sabemos que cada producción tiene sus limitaciones, y estamos aquí para ayudarte a encontrar las mejores opciones que se adapten a lo que necesitas.
+          En TJE, creemos que la calidad no tiene que costar una fortuna. Nos
+          especializamos en crear vestuario para obras de teatro que se ajusta a
+          tu presupuesto, sin dejar de lado la calidad. Sabemos que cada
+          producción tiene sus limitaciones, y estamos aquí para ayudarte a
+          encontrar las mejores opciones que se adapten a lo que necesitas.
         </div>
       </div>
       <div>
-        <div class="pt-10 flex gap-12 items-center justify-center overflow-hidden">
-          <img class="w-32" src="/Traje.png" />
-          <img class="w-32" src="/Traje.png" />
-          <img class="w-32" src="/Traje.png" />
-          <img class="w-32" src="/Traje.png" />
-          <img class="w-32" src="/Traje.png" />
-          <img class="w-32" src="/Traje.png" />
-          <img class="w-32" src="/Traje.png" />
+        <div
+          class="pt-10 flex gap-12 items-center justify-center overflow-hidden"
+        >
+          <img id="trajes" class="w-28" src="/Traje.png" />
+          <img id="trajes" class="w-28" src="/Traje.png" />
+          <img id="trajes" class="w-28" src="/Traje.png" />
+          <img id="trajes" class="w-28" src="/Traje.png" />
+          <img id="trajes" class="w-28" src="/Traje.png" />
+          <img id="trajes" class="w-28" src="/Traje.png" />
         </div>
       </div>
     </div>
@@ -82,35 +90,32 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
 
-	<div id="card" class="p-10 flex justify-between items-center flex-col md:flex-row gap-10">
+    <div
+      id="card"
+      class="p-10 flex justify-between items-center flex-col md:flex-row gap-10"
+    >
+      <div class="text-lg">
+        <div class="text-3xl pb-6">Contáctanos</div>
+        <div class="flex items-center gap-3">
+          <img src="/email.png" class="w-6 h-6" />
+          <div>tejidosdeensueño@gmail.com</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="/Instagram_icon.png.webp" class="w-6 h-6" />
+          <div>@tejidosdeensueno_tje</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="/WhatsApp.webp" class="w-6 h-6" />
+          <div>+34 608 31 00 07</div>
+        </div>
+      </div>
 
-		<div class="text-lg">
-			<div class="text-3xl pb-6">
-				Contáctanos
-			</div>
-			<div class="flex items-center gap-3">
-				<img src="/email.png" class="w-6 h-6">
-				<div>tejidosdeensueño@gmail.com</div>
-			</div>
-			<div class="flex items-center gap-3">
-				<img src="/Instagram_icon.png.webp" class="w-6 h-6">
-				<div>@tejidosdeensueno_tje</div>
-			</div>
-			<div class="flex items-center gap-3">
-				<img src="/WhatsApp.webp" class="w-6 h-6">
-				<div>+34 608 31 00 07</div>
-			</div>
-		</div>
-
-		<div class="text-3xl text-white font-bold flex gap-5 items-center">
-			<img class="w-12 z-10" src="/TJE_Logo.png" />
-			<div class="border-l-2 h-32"></div>
-			<span class="font-thin" style="letter-spacing: 10px;">TJE</span>
-		</div>
-
-	</div>
-
-
+      <div class="text-3xl text-white font-bold flex gap-5 items-center">
+        <img class="w-12 z-10" src="/TJE_Logo.png" />
+        <div class="border-l-2 h-32"></div>
+        <span class="font-thin" style="letter-spacing: 10px;">TJE</span>
+      </div>
+    </div>
   </main>
 </Layout>
 
@@ -139,4 +144,13 @@ import Layout from "../layouts/Layout.astro";
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(0, 0, 0, 0.88);
   }
+  
+  #trajes {
+	transition: all 0.2s;
+  }
+
+  #trajes:hover {
+	transform: scale(1.1);
+  }
+
 </style>
