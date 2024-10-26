@@ -52,12 +52,15 @@ import Layout from "../layouts/Layout.astro";
           transportan al público a diferentes épocas y mundos.
         </div>
       </div>
-	  <img class="max-w-[76ch] max-h-[34ch] object-cover w-full mt-10 m-auto rounded-lg brightness-75" src="/quienes-somos2.jpg">
+      <img
+        class="max-w-[76ch] max-h-[34ch] object-cover w-full mt-10 m-auto rounded-lg "
+        src="/quienes-somos2.jpg"
+      />
     </div>
 
     <div id="card" class="mt-20 py-20">
       <div class="m-auto max-w-[82ch] flex flex-col items-center px-8 gap-5">
-        <div class="text-4xl self-end">¿Porqué elegirnos?</div>
+        <div class="text-4xl self-end font-bold">¿Porqué elegirnos?</div>
         <div class="md:text-right">
           En TJE, creemos que la calidad no tiene que costar una fortuna. Nos
           especializamos en crear vestuario para obras de teatro que se ajusta a
@@ -80,13 +83,15 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
 
-    <div class="mt-6 py-20">
+    <div id="mapa" class="mp-6 py-20">
       <div class="m-auto max-w-[82ch] flex flex-col items-center px-8">
         <img
           src="/MapaTJE.jpg"
           class="border-solid border-4 border-slate-900 rounded-xl w-full max-h-[34ch] object-cover"
         />
-        <div class="self-end text-3xl pt-6">¿Dónde encontrarnos?</div>
+        <div class="self-end text-3xl pt-6 text-slate-800 font-bold">
+          ¿Dónde encontrarnos?
+        </div>
       </div>
     </div>
 
@@ -144,13 +149,21 @@ import Layout from "../layouts/Layout.astro";
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(0, 0, 0, 0.88);
   }
-  
+
   #trajes {
-	transition: all 0.2s;
+    transition: all 0.2s;
   }
 
   #trajes:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
   }
 
+  #mapa {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(200, 191, 159, 1) 100%
+    );
+  }
 </style>
