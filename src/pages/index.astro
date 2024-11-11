@@ -9,11 +9,9 @@ import Layout from "../layouts/Layout.astro";
         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center"
       >
         <div class="text-5xl text-white font-bold flex gap-5 items-center">
-          <img class="w-20 z-10" src="/TJE_Logo.png" />
-          <div class="border-l-2 h-56"></div>
-          <span class="font-thin" style="letter-spacing: 10px;">TJE</span>
+          <img class="w-80 z-10" src="/TJE1.png" />
         </div>
-        <div class="pt-10 text-center">
+        <div class="text-center">
           <span class="text-2xl" style="letter-spacing: 10px;"
             >TEJIDOS DE ENSUEÑO</span
           >
@@ -43,8 +41,8 @@ import Layout from "../layouts/Layout.astro";
       <div
         class="max-w-[82ch] m-auto flex gap-11 pt-24 px-8 flex-col md:flex-row"
       >
-        <div class="text-5xl text-slate-800 font-bold">¿Quienes somos?</div>
-        <div class="text-slate-800">
+        <div class="text-5xl text-white font-bold">¿Quienes somos?</div>
+        <div class="text-white">
           En TJE, somos un equipo apasionado de diseñadores y creadores
           especializados en el arte del vestuario para producciones teatrales.
           Con un profundo amor por el teatro, damos vida a cada personaje a
@@ -60,8 +58,8 @@ import Layout from "../layouts/Layout.astro";
 
     <div id="card" class="mt-20 py-20">
       <div class="m-auto max-w-[82ch] flex flex-col items-center px-8 gap-5">
-        <div class="text-4xl self-end font-bold">¿Porqué elegirnos?</div>
-        <div>
+        <div class="text-4xl self-end font-bold text-[#3d211a]">¿Porqué elegirnos?</div>
+        <div class="text-[#3d211a]">
           En TJE, creemos que la calidad no tiene que costar una fortuna. Nos
           especializamos en crear vestuario para obras de teatro que se ajusta a
           tu presupuesto, sin dejar de lado la calidad. Sabemos que cada
@@ -89,7 +87,7 @@ import Layout from "../layouts/Layout.astro";
           src="/MapaTJE.jpg"
           class="border-solid border-4 border-slate-900 rounded-xl w-full max-h-[34ch] object-cover"
         />
-        <div class="self-end text-3xl pt-6 text-slate-800 font-bold">
+        <div class="self-end text-3xl pt-6 text-white font-bold">
           ¿Dónde encontrarnos?
         </div>
       </div>
@@ -100,25 +98,23 @@ import Layout from "../layouts/Layout.astro";
       class="p-10 flex justify-between items-center flex-col md:flex-row gap-10"
     >
       <div class="text-lg">
-        <div class="text-3xl pb-6">Contáctanos</div>
+        <div class="text-3xl pb-6 text-black">Contáctanos</div>
         <div class="flex items-center gap-3">
-          <img src="/email.png" class="w-6 h-6" />
-          <div>tejidosdeensueño@gmail.com</div>
+          <img src="/email.png" class="w-6 h-6 " />
+          <div class="text-black">tejidosdeensueño@gmail.com</div>
         </div>
         <div class="flex items-center gap-3">
           <img src="/Instagram_icon.png.webp" class="w-6 h-6" />
-          <div>@tejidosdeensueno_tje</div>
+          <div class="text-black">@tejidosdeensueno_tje</div>
         </div>
         <div class="flex items-center gap-3">
           <img src="/WhatsApp.webp" class="w-6 h-6" />
-          <div>+34 608 31 00 07</div>
+          <div class="text-black">+34 608 31 00 07</div>
         </div>
       </div>
 
       <div class="text-3xl text-white font-bold flex gap-5 items-center">
-        <img class="w-12 z-10" src="/TJE_Logo.png" />
-        <div class="border-l-2 h-32"></div>
-        <span class="font-thin" style="letter-spacing: 10px;">TJE</span>
+        <img class="w-48 z-10" src="/TJE2.png" />
       </div>
     </div>
   </main>
@@ -143,11 +139,7 @@ import Layout from "../layouts/Layout.astro";
   }
 
   #card {
-    background: rgba(0, 0, 0, 0.84);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 0, 0, 0.88);
+    background: #cbb799;
   }
 
   #trajes {
@@ -159,11 +151,6 @@ import Layout from "../layouts/Layout.astro";
   }
 
   #mapa {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(200, 191, 159, 1) 100%
-    );
+    background: #6f4d38;
   }
 </style>
